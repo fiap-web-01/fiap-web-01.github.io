@@ -7,7 +7,6 @@
     <title>Banco com Conta Digital, Cartão sem tarifa e mais | C6 bank</title>
     <link rel="stylesheet" href="assets/css/main.css">
 
-
 </head>
 
 <body>
@@ -35,16 +34,29 @@
     </header>
 
 
-    <section class= "full-banner">
+    <section class= "full-banner-form">
 
-        <div class= "destak">
-            <div>
-                <h3><span>C6 GLOBAL INVEST </span>Bolsa Americana e fundos globais direto no app</h3>
-            </div>
-                <h1>O banco da vida de20 milhões de pessoas</h1>
-                <h2>Conta digital, cartão de crédito, investimentos e mais: tudo em um só app.</h2>
-                <button>NOSSOS PRODUTOS</button>
-            </div>
+        <div class="container-login">
+         <form class="form-login">
+
+            <label for="login">
+                CPF*:
+                <input type="text" nome="login" id="login" placeholder="Digite o CPF"/>
+            </label>
+
+            <label for="senha">
+                Senha*:
+                <input type="password" nome="password" id="password" placeholder="Digite a Senha"/>
+            </label>
+
+            <button type="submit">continuar</button>
+            <p><a href="#">Esqueci minha senha</a></p>
+            <p><a href="#">Ainda não sou cliente</a></p>
+            
+        </form>
+            
+        </div>
+
     </section>
 
     <footer>
@@ -55,15 +67,6 @@
          const button = document.querySelector(".top-button");
          header.style.background = "none";
          button.classList.add("disabled");
-
-         //margin-bottom
-         //marginButtom
-
-         //janela browser ou seja o navegador e site documento 
-         //window e documet
-
-         //evento chamado scroll - Java Script é uma liguagem dirigida a evento
-         //criamos uma escuta para o evento
 
         window.addEventListener('scroll', (e) => {
             console.log(window.scrollY);
