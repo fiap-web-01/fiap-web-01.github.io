@@ -1,5 +1,4 @@
 .full-banner-form{
-    width: 100%;
     height: calc(100vh - 10px);
     display: flex;
     align-items: center;
@@ -9,7 +8,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position:top right;
-
 
     .container-login {
         background-color: rgba(248, 243, 243, 0.651);
