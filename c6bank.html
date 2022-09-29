@@ -59,12 +59,43 @@
 
          //evento chamado scroll - Java Script é uma liguagem dirigida a evento
          //criamos uma escuta para o evento
+
+         //comando em ternario
          window.addEventListener('scroll', (e)  => {
+
             window.scrollY <= 100 ? header.style.background = 'none' : header.style.background = '#fff';
             window.scrollY <= 100 ? top-button.classList.add('disabled') : top-button.classList.remove('disabled');
-            window.scrollY <= 1000 ? header.style.background = 'none' : header.style.background = 'black';
+            window.scrollY >= 1000 ? header.style.background = 'black' :'null';
             window.scrollY <= 1000 ? header.classList.remove('text-header') : header.classList.add('text-header');
         })
+
+        // Ao chegar no footer mudar o header
+        // if (body.clientHeight)
+
+        /*  comando em Se
+        <script>
+    const elHeader = document.querySelector(".top-site");
+    const elButton = document.querySelector(".top-button");
+    const elBody = document.querySelector("body");
+    elHeader.style.background = "none";
+    elButton.classList.add("disabled");
+    window.addEventListener("scroll", (e) => {
+      const positionScroll = window.scrollY;
+      if (positionScroll <= 100) {
+        elHeader.style.background = "none";
+        elButton.classList.add("disabled");
+        elHeader.classList.remove("text-header");
+      } else if (positionScroll <= 945) {
+        elHeader.style.background = "#fff";
+        elButton.classList.remove("disabled");
+        elHeader.classList.remove("text-header");
+      } else {
+        elHeader.style.background = "#000"
+        elHeader.classList.add("text-header");
+      }
+    });
+  </script>
+  */
     </script>
 </body>
 
