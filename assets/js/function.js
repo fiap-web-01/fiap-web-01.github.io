@@ -8,6 +8,13 @@ let myFunc1 ={
 
     },
 };
+let myFunc2 ={
+    showArguments:()=>{
+        resultado.innerHTML = arguments;
+        console.log(arguments);
+
+    },
+};
 
 // chamando a função 
 myFunc1.showArguments(
@@ -28,22 +35,22 @@ myFunc1.showArguments(
     };
     */
 
-    myFunc2.showArguments(
-        "Vai São Paulo",
-        "Full-Stack Developer",
-        "React",
-        "NodeJS",
-        "TypeScript"
-        );
+myFunc2.showArguments(
+    "Vai São Paulo",
+    "Full-Stack Developer",
+    "React",
+    "NodeJS",
+    "TypeScript"
+);
 
-        let user = {
-            name: "Juliana Cruz",
-            usandoArrow:() => {
-                console.log("Meu nome é  ", this.name, "Arrow Function");
-            },
-            usandoNominal() {
-                console.log("Meu nome é  ", this.name, "Arrow Function");
-            },
-        };
-        user.usandoArrow();
-        user.usandoNominal();
+let user = {
+    name: "Juliana Cruz",
+    usandoArrow:() => {
+    console.log("Meu nome é  ", this.name, "Arrow Function");
+    },
+    usandoNominal() {
+    console.log("Meu nome é  ", this.name, "Arrow Function");
+    },
+};
+user.usandoArrow();
+user.usandoNominal();
