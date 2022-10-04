@@ -41,15 +41,15 @@ const mudaTitulo2 = function(novoTitulo){                       //modelo de expr
 mudaTitulo2("Trocando Subtitulo");
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>/
-/*
+
 const relogio =()=>{                                           // Modelo função anonima 
     const date = new Date();                             // chamar o relogio no lugar do titulo 2
      mudaTitulo2(date.toLocaleTimeString());
 };
 setInterval(relogio, 1000);
-*/
-//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>/
 
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>/
+/*
 const frases = ["Isso é você que esta falando!", "Fato!", "E você ai perdendo tempo"];
 const mudaFrase = (elem, frases, x) => {
     let total = 0;
@@ -60,4 +60,22 @@ const mudaFrase = (elem, frases, x) => {
     }, x * 1000);
   };
 mudaFrase("h2", frases, 4);
+*/
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// SOLUÇÃO DO PROFESSOR //
+/*
+const phrases = ["A vida e bela 2", "A vida é curta 1 ", "A vida e uma dadiva 3"]  //cria uma array
+const mudaPhrases =(alvo, texto, tempo) =>{
+  let total = 2;
+  setInterval(()=>{                                            //arrow function 
+    document.querySelector(alvo).innerHTML =
+    texto[total >= texto.length - 1 ? (total = 0) : (total +=1)];
+    }, tempo *1000;
+}                                                     //define a variálvel
+
+mudaPhrase ("h1", frases, 4);
+*/
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 
