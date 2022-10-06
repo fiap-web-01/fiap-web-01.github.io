@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"sass --watch ./assets/scss:./assets/css --style compressed --no-source-map",
+    "dev": "sass --watch ./assets/scss:./assets/css --style compressed --no-source-map",
     "git": "git add --all && git commit -m\"Deploy\" && git push origin master && echo \"concluído\" && npm run dev"
   },
   "repository": {
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/newjully/fiap-avanade-web-2109/issues"
   },
-  "homepage": "https://github.com/newjully/fiap-avanade-web-2109#readme"
+  "homepage": "https://github.com/newjully/fiap-avanade-web-2109#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
 }
